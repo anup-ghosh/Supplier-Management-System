@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_supplier_management" name="Supplier Management" sequence="10" web_icon="supplier_management,static/description/icon.png"/>
+    <menuitem id="menu_procurement_management_supplier_registration" name="Supplier Registration"
+              parent="menu_supplier_management"
+              action="action_supplier_registration_reviewr" sequence="15"
+              groups="supplier_management.group_supplier_management_reviewer"/>
+    <menuitem id="menu_supplier_confirmation" name="Supplier Registration" parent="menu_supplier_management"
+              action="action_supplier_registration_approver" sequence="20"
+              groups="supplier_management.group_supplier_management_approver"/>
+    <menuitem id="menu_rfp_list" name="RFP List" parent="menu_supplier_management" action="action_rfp_list"/>
+</odoo>

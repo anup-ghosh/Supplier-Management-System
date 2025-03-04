@@ -1,0 +1,22 @@
+id,rfp_id:id,partner_id:id,warranty_period,date_planned,user_id:id,state,recommended,score,create_date,notes,date_approve
+rfq_1,rfp_1,supplier_1,12,2025-02-23,base.user_admin,cancel,1,50,2025-02-22,"Need to pay 50% in advance. Return policy is 30 days.",
+rfq_2,rfp_1,supplier_2,12,2025-02-23,base.user_admin,purchase,1,60,2025-02-22,"Need to pay 30% in advance. Return policy is 45 days.",2025-02-22
+rfq_3,rfp_3,supplier_1,12,2025-04-05,base.user_admin,draft,1,70,2025-02-19,"Need to pay 100% in advance. Return policy is 60 days.",
+rfq_4,rfp_3,supplier_2,12,2025-04-07,base.user_admin,draft,1,80,2025-02-19,"Need to pay 100% in advance. Return policy is 60 days.",
+rfq_5,rfp_4,supplier_1,12,2025-04-08,base.user_admin,draft,1,90,2025-02-19,"Need to pay 100% in advance. Return policy is 60 days.",
+rfq_6,rfp_4,supplier_2,12,2025-04-08,base.user_admin,draft,,,2025-02-19,"Need to pay 100% in advance. Return policy is 60 days.",
+rfq_7,rfp_7,supplier_1,18,2025-02-28,base.user_admin,purchase,1,85,2025-02-22,"Need to pay 40% in advance. Return policy is 45 days.",2025-02-22
+rfq_8,rfp_7,supplier_3,18,2025-02-28,base.user_admin,cancel,1,75,2025-02-22,"Need to pay 60% in advance. Return policy is 30 days.",
+rfq_9,rfp_9,supplier_6,24,2025-04-20,base.user_admin,draft,1,65,2025-02-23,"Need to pay 75% in advance. Return policy is 90 days.",
+rfq_10,rfp_9,supplier_7,24,2025-04-22,base.user_admin,draft,1,70,2025-02-23,"Need to pay 50% in advance. Return policy is 60 days.",
+rfq_11,rfp_13,supplier_3,12,2025-03-05,base.user_admin,purchase,1,90,2025-02-22,"Need to pay 30% in advance. Return policy is 45 days.",2025-02-22
+rfq_12,rfp_13,supplier_6,12,2025-03-05,base.user_admin,cancel,1,80,2025-02-22,"Need to pay 50% in advance. Return policy is 30 days.",
+rfq_13,rfp_14,supplier_6,18,2025-03-10,base.user_admin,purchase,1,95,2025-02-22,"Need to pay 25% in advance. Return policy is 60 days.",2025-02-22
+rfq_14,rfp_14,supplier_7,18,2025-03-10,base.user_admin,cancel,1,85,2025-02-22,"Need to pay 40% in advance. Return policy is 45 days.",
+rfq_15,rfp_15,supplier_7,24,2025-03-15,base.user_admin,purchase,1,100,2025-02-22,"Need to pay 20% in advance. Return policy is 90 days.",2025-02-22
+rfq_16,rfp_16,supplier_2,12,2025-03-20,base.user_admin,purchase,1,85,2025-02-23,"Need to pay 30% in advance. Return policy is 45 days.",2025-02-23
+rfq_17,rfp_16,supplier_3,12,2025-03-20,base.user_admin,cancel,1,70,2025-02-23,"Need to pay 50% in advance. Return policy is 30 days.",
+rfq_18,rfp_18,supplier_2,18,2025-03-25,base.user_admin,purchase,1,90,2025-02-23,"Need to pay 25% in advance. Return policy is 60 days.",2025-02-23
+rfq_19,rfp_18,supplier_3,18,2025-03-25,base.user_admin,cancel,1,75,2025-02-23,"Need to pay 40% in advance. Return policy is 45 days.",
+rfq_20,rfp_20,supplier_1,24,2025-04-05,base.user_admin,purchase,1,95,2025-02-23,"Need to pay 20% in advance. Return policy is 90 days.",2025-02-23
+rfq_21,rfp_20,supplier_6,24,2025-04-05,base.user_admin,cancel,1,80,2025-02-23,"Need to pay 50% in advance. Return policy is 30 days."

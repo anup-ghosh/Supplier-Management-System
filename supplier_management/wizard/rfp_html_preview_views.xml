@@ -1,0 +1,188 @@
+<odoo>
+    <template id="rfp_report_html_preview">
+        <t t-call="web.html_container">
+            <t t-set="rfp_report" t-value="object"/>
+
+            <!-- Main Container -->
+            <div class="o_report_content" style="padding: 25px; font-family: Arial, sans-serif; color: #333;">
+                <!-- Header with Logo and Horizontal Line -->
+                <div class="o_report_header" style="padding: 20px; border-bottom: 3px solid #604058;">
+                    <div style="display: flex; justify-content: flex-start; align-items: center;">
+                        <t t-if="rfp_report.company_logo">
+                            <img t-att-src="image_data_uri(rfp_report.company_logo)"
+                                 style="max-width: 100px; height: auto;"/>
+                        </t>
+                    </div>
+                </div>
+
+                <!-- Supplier Info -->
+                <div style="text-align: right;">
+                    <table style="border: 1px solid #ddd; border-collapse: collapse; width: 350px; margin-left: auto; margin-top: 16px;">
+                        <!-- Supplier Company Name Row -->
+                        <tr>
+                            <td colspan="2" style="padding: 5px; border: 1px solid #ddd; text-align: center; color: #000; font-weight: bold; font-size: 20px;">
+                                <t t-esc="rfp_report.supplier_id.name"/>
+                            </td>
+                        </tr>
+                        <!-- Supplier Info Rows -->
+                        <t t-foreach="supplier_info" t-as="item">
+                            <tr>
+                                <td style="padding: 5px; border: 1px solid #ddd; text-align: center; color: #555; font-weight: bold; width: 150px; font-size: 12px;">
+                                    <t t-esc="item[0]"/>
+                                </td>
+                                <td style="padding: 5px; border: 1px solid #ddd; text-align: center; font-size: 12px;">
+                                    <t t-esc="item[1]"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </table>
+                </div>
+
+                <!-- RFP Table -->
+                <table style="width: 70%; margin-top:16px; margin-left: 0; margin-bottom: 20px; border-collapse: collapse; border: 1px solid #ddd;">
+                    <thead>
+                        <tr>
+                            <th colspan="4" style="padding: 8px; border: 1px solid #ddd; text-align: center; font-size: 18px; font-weight: bold; color: #604058;">
+                                Accepted RFPs
+                            </th>
+                        </tr>
+                        <tr style="background: #604058; color: white; font-weight: bold;">
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">RFP Number</th>
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">Date</th>
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">Required Date</th>
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                Total Amount (<t t-esc="currency_symbol"/>)
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="rfps" t-as="rfp">
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                    <t t-esc="rfp.rfp_name"/>
+                                </td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                    <t t-esc="rfp.create_date.strftime('%d/%m/%Y')"/>
+                                </td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                    <t t-esc="rfp.required_date.strftime('%d/%m/%Y')"/>
+                                </td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                    <t t-esc="'{:,.2f}'.format(rfp.total_amount)"/>
+                                </td>
+                            </tr>
+                        </t>
+                        <tr style="font-weight: bold;">
+                            <td colspan="3" style="padding: 8px; border: 1px solid #ddd; text-align: center;">Net Total</td>
+                            <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                <t t-esc="'{:,.2f}'.format(total_amount)"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Product Lines (Grouped by RFP) -->
+                <table style="width: 100%; margin-bottom: 20px; border-collapse: collapse; border: 1px solid #ddd;">
+                    <thead>
+                        <tr>
+                            <th colspan="6" style="padding: 8px; border: 1px solid #ddd; text-align: center; font-size: 18px; font-weight: bold; color: #604058;">
+                                Product Information
+                            </th>
+                        </tr>
+                        <tr style="background: #604058; color: white; font-weight: bold;">
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">RFP Number</th>
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">Product</th>
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">Quantity</th>
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                Unit Price (<t t-esc="currency_symbol"/>)
+                            </th>
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                Delivery Charge (<t t-esc="currency_symbol"/>)
+                            </th>
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                Subtotal (<t t-esc="currency_symbol"/>)
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="grouped_products.items()" t-as="rfp">
+                            <t t-set="rowspan_count" t-value="len(rfp[1])"/>
+                            <t t-set="index" t-value="0"/>
+                            <t t-foreach="rfp[1]" t-as="item">
+                                <tr>
+                                    <t t-if="index == 0">
+                                        <th t-att-rowspan="rowspan_count"
+                                            style="padding: 8px; border: 1px solid #ddd; text-align: center; vertical-align: middle;">
+                                            <t t-esc="rfp[0]"/>
+                                        </th>
+                                    </t>
+                                    <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                        <t t-esc="item['product']"/>
+                                    </td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                        <t t-esc="item['quantity']"/>
+                                    </td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                        <t t-esc="'%.2f' % item['unit_price']"/>
+                                    </td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                        <t t-esc="'%.2f' % item['delivery_charges']"/>
+                                    </td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                        <t t-esc="'%.2f' % item['subtotal']"/>
+                                    </td>
+                                </tr>
+                                <t t-set="index" t-value="index + 1"/>
+                            </t>
+                        </t>
+                        <tr style="font-weight: bold;">
+                            <td colspan="5" style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                Net Total
+                            </td>
+                            <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">
+                                <t t-esc="'%.2f' % product_total_amount"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Company Info -->
+                <div style="margin-top: 30px; text-align: left;">
+                    <table style="border: 1px solid #ddd; border-collapse: collapse; width: 300px; ">
+                        <!-- Company Name Row -->
+                        <tr>
+                            <td colspan="2" style="padding: 8px; border: 1px solid #ddd; text-align: center; font-size: 18px; font-weight: bold; color: #604058;">
+                                <t t-esc="rfp_report.env.company.name"/>
+                            </td>
+                        </tr>
+                        <!-- Company Info Rows -->
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: center; color: #555; font-weight: bold; width: 100px;">
+                                Email
+                            </td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: center;">
+                                <t t-esc="rfp_report.env.company.email"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: center; color: #555; font-weight: bold; width: 100px;">
+                                Phone
+                            </td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: center;">
+                                <t t-esc="rfp_report.env.company.phone"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: center; color: #555; font-weight: bold; width: 100px;">
+                                Address
+                            </td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: center;">
+                                <t t-esc="rfp_report.env.company.street"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>
