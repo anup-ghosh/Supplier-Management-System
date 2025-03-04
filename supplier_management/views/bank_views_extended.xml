@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="bank_inherited_form_view" model="ir.ui.view">
+        <field name="name">bank.inherited.form</field>
+        <field name="model">res.bank</field>
+        <field name="inherit_id" ref="base.view_res_bank_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='bic']" position="after">
+                <field name="bank_swift_code"/>
+                <field name="iban"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

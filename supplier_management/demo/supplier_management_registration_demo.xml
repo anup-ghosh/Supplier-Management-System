@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="client_1" model="supplier.client">
+        <field name="name">Client Corporation A</field>
+        <field name="email">client_a@business.com</field>
+        <field name="phone">555-1001</field>
+        <field name="address">200 Client Street, City 1</field>
+    </record>
+
+    <record id="client_2" model="supplier.client">
+        <field name="name">Client Solutions B</field>
+        <field name="email">client_b@business.com</field>
+        <field name="phone">555-1002</field>
+        <field name="address">300 Corporate Blvd, City 2</field>
+    </record>
+
+    <record id="client_3" model="supplier.client">
+        <field name="name">Bright Ventures C</field>
+        <field name="email">client_c@business.com</field>
+        <field name="phone">555-1003</field>
+        <field name="address">400 Innovation Ave, City 3</field>
+    </record>
+
+    <record id="client_4" model="supplier.client">
+        <field name="name">Global Partners D</field>
+        <field name="email">client_d@business.com</field>
+        <field name="phone">555-1004</field>
+        <field name="address">500 Trade Road, City 4</field>
+    </record>
+
+    <record id="client_5" model="supplier.client">
+        <field name="name">Eco Systems E</field>
+        <field name="email">client_e@business.com</field>
+        <field name="phone">555-1005</field>
+        <field name="address">600 Green Lane, City 5</field>
+    </record>
+
+    <!-- New Client Records -->
+    <record id="client_6" model="supplier.client">
+        <field name="name">Tech Innovators F</field>
+        <field name="email">client_f@business.com</field>
+        <field name="phone">555-1006</field>
+        <field name="address">700 Tech Way, City 6</field>
+    </record>
+
+    <record id="client_7" model="supplier.client">
+        <field name="name">Future Enterprises G</field>
+        <field name="email">client_g@business.com</field>
+        <field name="phone">555-1007</field>
+        <field name="address">800 Future Drive, City 7</field>
+    </record>
+
+    <record id="client_8" model="supplier.client">
+        <field name="name">Prime Solutions H</field>
+        <field name="email">client_h@business.com</field>
+        <field name="phone">555-1008</field>
+        <field name="address">900 Prime Street, City 8</field>
+    </record>
+
+    <record id="client_9" model="supplier.client">
+        <field name="name">Visionary Co. I</field>
+        <field name="email">client_i@business.com</field>
+        <field name="phone">555-1009</field>
+        <field name="address">1000 Vision Ave, City 9</field>
+    </record>
+
+    <record id="client_10" model="supplier.client">
+        <field name="name">NextLevel J</field>
+        <field name="email">client_j@business.com</field>
+        <field name="phone">555-1010</field>
+        <field name="address">1100 Level Road, City 10</field>
+    </record>
+
+    <record id="client_11" model="supplier.client">
+        <field name="name">Core Dynamics K</field>
+        <field name="email">client_k@business.com</field>
+        <field name="phone">555-1011</field>
+        <field name="address">1200 Core Lane, City 11</field>
+    </record>
+
+    <record id="client_12" model="supplier.client">
+        <field name="name">Peak Performance L</field>
+        <field name="email">client_l@business.com</field>
+        <field name="phone">555-1012</field>
+        <field name="address">1300 Peak Blvd, City 12</field>
+    </record>
+
+    <record id="client_13" model="supplier.client">
+        <field name="name">Green Horizons M</field>
+        <field name="email">client_m@business.com</field>
+        <field name="phone">555-1013</field>
+        <field name="address">1400 Horizon St, City 13</field>
+    </record>
+
+    <record id="client_14" model="supplier.client">
+        <field name="name">Skyline Ventures N</field>
+        <field name="email">client_n@business.com</field>
+        <field name="phone">555-1014</field>
+        <field name="address">1500 Skyline Rd, City 14</field>
+    </record>
+
+    <record id="client_15" model="supplier.client">
+        <field name="name">TruePath O</field>
+        <field name="email">client_o@business.com</field>
+        <field name="phone">555-1015</field>
+        <field name="address">1600 True Path, City 15</field>
+    </record>
+
+    <!-- Supplier Registration 1: Approved -->
+    <record id="supplier_registration_1" model="supplier.registration">
+        <field name="company_name">Company 1 Ltd.</field>
+        <field name="email">company_1_ltd@business.com</field>
+        <field name="phone">555-0001</field>
+        <field name="company_address">101 Business Park, City 1</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm1.png"/>
+        <field name="company_type_category">corporate</field>
+        <field name="contact_person_name">Primary Contact 1</field>
+        <field name="contact_email">primary1@company.com</field>
+        <field name="contact_phone">555-9001</field>
+        <field name="contact_address">101 Business Park, City 1</field>
+        <field name="finance_contact_name">Finance Contact 1</field>
+        <field name="finance_contact_email">finance1@company.com</field>
+        <field name="finance_contact_phone">555-4001</field>
+        <field name="finance_contact_address">101 Finance Dept, City 1</field>
+        <field name="authorized_person_name">Authorized Person 1</field>
+        <field name="authorized_person_email">authorized1@company.com</field>
+        <field name="authorized_person_phone">555-5001</field>
+        <field name="authorized_person_address">Executive Suite 100, City 1</field>
+        <field name="trade_license_number">TRD110001</field>
+        <field name="tax_identification_number">1000000000000001</field>
+        <field name="commencement_date">2023-01-15</field>
+        <field name="expiry_date">2027-01-15</field>
+        <field name="bank_name">XYZ Bank</field>
+        <field name="bank_address">201 Bank Street, City 1</field>
+        <field name="bank_swift_code">SWIFT301</field>
+        <field name="account_name">Company 1 Ltd.</field>
+        <field name="account_number">1000000001</field>
+        <field name="iban">US2000000000000001</field>
+        <field name="company_address_as_per_bank">101 Business Park, City 1</field>
+        <field name="certification">ISO 27001</field>
+        <field name="certificate_number">CERT-2025-101</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2023-01-10</field>
+        <field name="certificate_expiry_date">2027-04-10</field>
+        <field name="name_of_signatory">Signatory 1</field>
+        <field name="authorized_signatory">CEO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm1.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_1'), ref('client_2')])]"/>
+        <field name="state">approved</field>
+    </record>
+
+    <!-- Approved Supplier 1: res.partner -->
+    <record id="supplier_1" model="res.partner">
+        <field name="name">Company 1 Ltd.</field>
+        <field name="email">company_1_ltd@business.com</field>
+        <field name="phone">555-0001</field>
+        <field name="street">101 Business Park, City 1</field>
+        <field name="company_type_category">corporate</field>
+        <field name="trade_license_number">TRD110001</field>
+        <field name="vat">1000000000000001</field>
+        <field name="commencement_date">2023-01-15</field>
+        <field name="expiry_date">2027-01-15</field>
+        <field name="certification">ISO 27001</field>
+        <field name="certificate_number">CERT-2025-101</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2023-01-10</field>
+        <field name="certificate_expiry_date">2027-04-10</field>
+        <field name="supplier_rank">1</field>
+        <field name="company_type">company</field>
+        <field name="name_of_signatory">Signatory 1</field>
+        <field name="authorized_signatory">CEO</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm1.png"/>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm1.png"/>
+        <field name="child_ids" eval="[
+            (0, 0, {'name': 'Primary Contact 1', 'email': 'primary1@company.com', 'phone': '555-9001', 'street': '101 Business Park, City 1', 'function': 'Primary Contact', 'type': 'contact'}),
+            (0, 0, {'name': 'Finance Contact 1', 'email': 'finance1@company.com', 'phone': '555-4001', 'street': '101 Finance Dept, City 1', 'function': 'Finance Contact', 'type': 'contact'}),
+            (0, 0, {'name': 'Authorized Person 1', 'email': 'authorized1@company.com', 'phone': '555-5001', 'street': 'Executive Suite 100, City 1', 'function': 'Authorized Contact', 'type': 'contact'}),
+            (0, 0, {'name': 'Client Corporation A', 'email': 'client_a@business.com', 'phone': '555-1001', 'street': '200 Client Street, City 1', 'type': 'contact'}),
+            (0, 0, {'name': 'Client Solutions B', 'email': 'client_b@business.com', 'phone': '555-1002', 'street': '300 Corporate Blvd, City 2', 'type': 'contact'})
+        ]"/>
+    </record>
+
+    <!-- Approved Supplier 1: res.bank -->
+    <record id="bank_1" model="res.bank">
+        <field name="name">XYZ Bank</field>
+        <field name="street">201 Bank Street, City 1</field>
+        <field name="bank_swift_code">SWIFT301</field>
+        <field name="iban">US2000000000000001</field>
+    </record>
+
+    <!-- Approved Supplier 1: res.partner.bank -->
+    <record id="bank_account_1" model="res.partner.bank">
+        <field name="acc_holder_name">Company 1 Ltd.</field>
+        <field name="acc_number">1000000001</field>
+        <field name="bank_id" ref="bank_1"/>
+        <field name="partner_id" ref="supplier_1"/>
+        <field name="address">101 Business Park, City 1</field>
+    </record>
+
+    <!-- Approved Supplier 1: res.users -->
+    <record id="user_1" model="res.users">
+        <field name="login">company_1_ltd@business.com</field>
+        <field name="password">company_1_ltd@business.com</field>
+        <field name="partner_id" ref="supplier_1"/>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+    </record>
+
+    <!-- Supplier Registration 2: Approved -->
+    <record id="supplier_registration_2" model="supplier.registration">
+        <field name="company_name">TechNova Inc.</field>
+        <field name="email">technova@business.com</field>
+        <field name="phone">555-0002</field>
+        <field name="company_address">202 Tech Hub, City 2</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm2.png"/>
+        <field name="company_type_category">LLC</field>
+        <field name="contact_person_name">Primary Contact 2</field>
+        <field name="contact_email">primary2@technova.com</field>
+        <field name="contact_phone">555-9002</field>
+        <field name="contact_address">202 Tech Hub, City 2</field>
+        <field name="finance_contact_name">Finance Contact 2</field>
+        <field name="finance_contact_email">finance2@technova.com</field>
+        <field name="finance_contact_phone">555-4002</field>
+        <field name="finance_contact_address">202 Finance Wing, City 2</field>
+        <field name="authorized_person_name">Authorized Person 2</field>
+        <field name="authorized_person_email">authorized2@technova.com</field>
+        <field name="authorized_person_phone">555-5002</field>
+        <field name="authorized_person_address">Tech Suite 200, City 2</field>
+        <field name="trade_license_number">TRD110002</field>
+        <field name="tax_identification_number">2000000000000002</field>
+        <field name="commencement_date">2022-06-20</field>
+        <field name="expiry_date">2026-06-20</field>
+        <field name="bank_name">ABC Bank</field>
+        <field name="bank_address">302 Financial Rd, City 2</field>
+        <field name="bank_swift_code">SWIFT302</field>
+        <field name="account_name">TechNova Inc.</field>
+        <field name="account_number">2000000002</field>
+        <field name="iban">US3000000000000002</field>
+        <field name="company_address_as_per_bank">202 Tech Hub, City 2</field>
+        <field name="certification">ISO 9001</field>
+        <field name="certificate_number">CERT-2025-102</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2022-06-15</field>
+        <field name="certificate_expiry_date">2026-09-15</field>
+        <field name="name_of_signatory">Signatory 2</field>
+        <field name="authorized_signatory">CFO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm2.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_2'), ref('client_3')])]"/>
+        <field name="state">approved</field>
+    </record>
+
+    <!-- Approved Supplier 2: res.partner -->
+    <record id="supplier_2" model="res.partner">
+        <field name="name">TechNova Inc.</field>
+        <field name="email">technova@business.com</field>
+        <field name="phone">555-0002</field>
+        <field name="street">202 Tech Hub, City 2</field>
+        <field name="company_type_category">LLC</field>
+        <field name="trade_license_number">TRD110002</field>
+        <field name="vat">2000000000000002</field>
+        <field name="commencement_date">2022-06-20</field>
+        <field name="expiry_date">2026-06-20</field>
+        <field name="certification">ISO 9001</field>
+        <field name="certificate_number">CERT-2025-102</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2022-06-15</field>
+        <field name="certificate_expiry_date">2026-09-15</field>
+        <field name="supplier_rank">1</field>
+        <field name="company_type">company</field>
+        <field name="name_of_signatory">Signatory 2</field>
+        <field name="authorized_signatory">CFO</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm2.png"/>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm2.png"/>
+        <field name="child_ids" eval="[
+        (0, 0, {'name': 'Primary Contact 2', 'email': 'primary2@technova.com', 'phone': '555-9002', 'street': '202 Tech Hub, City 2', 'function': 'Primary Contact', 'type': 'contact'}),
+        (0, 0, {'name': 'Finance Contact 2', 'email': 'finance2@technova.com', 'phone': '555-4002', 'street': '202 Finance Wing, City 2', 'function': 'Finance Contact', 'type': 'contact'}),
+        (0, 0, {'name': 'Authorized Person 2', 'email': 'authorized2@technova.com', 'phone': '555-5002', 'street': 'Tech Suite 200, City 2', 'function': 'Authorized Contact', 'type': 'contact'}),
+        (0, 0, {'name': 'Client Solutions B', 'email': 'client_b@business.com', 'phone': '555-1002', 'street': '300 Corporate Blvd, City 2', 'type': 'contact'}),
+        (0, 0, {'name': 'Bright Ventures C', 'email': 'client_c@business.com', 'phone': '555-1003', 'street': '400 Innovation Ave, City 3', 'type': 'contact'})
+    ]"/>
+    </record>
+
+    <!-- Approved Supplier 2: res.bank -->
+    <record id="bank_2" model="res.bank">
+        <field name="name">ABC Bank</field>
+        <field name="street">302 Financial Rd, City 2</field>
+        <field name="bank_swift_code">SWIFT302</field>
+        <field name="iban">US3000000000000002</field>
+    </record>
+
+    <!-- Approved Supplier 2: res.partner.bank -->
+    <record id="bank_account_2" model="res.partner.bank">
+        <field name="acc_holder_name">TechNova Inc.</field>
+        <field name="acc_number">2000000002</field>
+        <field name="bank_id" ref="bank_2"/>
+        <field name="partner_id" ref="supplier_2"/>
+        <field name="address">202 Tech Hub, City 2</field>
+    </record>
+
+    <!-- Approved Supplier 2: res.users -->
+    <record id="user_2" model="res.users">
+        <field name="login">technova@business.com</field>
+        <field name="password">technova@business.com</field>
+        <field name="partner_id" ref="supplier_2"/>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+    </record>
+
+    <!-- Supplier Registration 3: Approved -->
+    <record id="supplier_registration_3" model="supplier.registration">
+        <field name="company_name">PeakPulse Solutions</field>
+        <field name="email">peakpulse@business.com</field>
+        <field name="phone">555-0003</field>
+        <field name="company_address">303 Industry Lane, City 3</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm3.png"/>
+        <field name="company_type_category">partnership</field>
+        <field name="contact_person_name">Primary Contact 3</field>
+        <field name="contact_email">primary3@peakpulse.com</field>
+        <field name="contact_phone">555-9003</field>
+        <field name="contact_address">303 Industry Lane, City 3</field>
+        <field name="finance_contact_name">Finance Contact 3</field>
+        <field name="finance_contact_email">finance3@peakpulse.com</field>
+        <field name="finance_contact_phone">555-4003</field>
+        <field name="finance_contact_address">303 Finance Block, City 3</field>
+        <field name="authorized_person_name">Authorized Person 3</field>
+        <field name="authorized_person_email">authorized3@peakpulse.com</field>
+        <field name="authorized_person_phone">555-5003</field>
+        <field name="authorized_person_address">Suite 300, City 3</field>
+        <field name="trade_license_number">TRD110003</field>
+        <field name="tax_identification_number">3000000000000003</field>
+        <field name="commencement_date">2021-03-25</field>
+        <field name="expiry_date">2025-03-25</field>
+        <field name="bank_name">PQR Bank</field>
+        <field name="bank_address">403 Commerce St, City 3</field>
+        <field name="bank_swift_code">SWIFT303</field>
+        <field name="account_name">PeakPulse Solutions</field>
+        <field name="account_number">3000000003</field>
+        <field name="iban">US4000000000000003</field>
+        <field name="company_address_as_per_bank">303 Industry Lane, City 3</field>
+        <field name="certification">ISO 14001</field>
+        <field name="certificate_number">CERT-2025-103</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2021-03-20</field>
+        <field name="certificate_expiry_date">2025-06-20</field>
+        <field name="name_of_signatory">Signatory 3</field>
+        <field name="authorized_signatory">COO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm3.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_3'), ref('client_4')])]"/>
+        <field name="state">approved</field>
+    </record>
+
+    <!-- Approved Supplier 3: res.partner -->
+    <record id="supplier_3" model="res.partner">
+        <field name="name">PeakPulse Solutions</field>
+        <field name="email">peakpulse@business.com</field>
+        <field name="phone">555-0003</field>
+        <field name="street">303 Industry Lane, City 3</field>
+        <field name="company_type_category">partnership</field>
+        <field name="trade_license_number">TRD110003</field>
+        <field name="vat">3000000000000003</field>
+        <field name="commencement_date">2021-03-25</field>
+        <field name="expiry_date">2025-03-25</field>
+        <field name="certification">ISO 14001</field>
+        <field name="certificate_number">CERT-2025-103</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2021-03-20</field>
+        <field name="certificate_expiry_date">2025-06-20</field>
+        <field name="supplier_rank">1</field>
+        <field name="company_type">company</field>
+        <field name="name_of_signatory">Signatory 3</field>
+        <field name="authorized_signatory">COO</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm3.png"/>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm3.png"/>
+        <field name="child_ids" eval="[
+            (0, 0, {'name': 'Primary Contact 3', 'email': 'primary3@peakpulse.com', 'phone': '555-9003', 'street': '303 Industry Lane, City 3', 'function': 'Primary Contact', 'type': 'contact'}),
+            (0, 0, {'name': 'Finance Contact 3', 'email': 'finance3@peakpulse.com', 'phone': '555-4003', 'street': '303 Finance Block, City 3', 'function': 'Finance Contact', 'type': 'contact'}),
+            (0, 0, {'name': 'Authorized Person 3', 'email': 'authorized3@peakpulse.com', 'phone': '555-5003', 'street': 'Suite 300, City 3', 'function': 'Authorized Contact', 'type': 'contact'}),
+            (0, 0, {'name': 'Bright Ventures C', 'email': 'client_c@business.com', 'phone': '555-1003', 'street': '400 Innovation Ave, City 3', 'type': 'contact'}),
+            (0, 0, {'name': 'Global Partners D', 'email': 'client_d@business.com', 'phone': '555-1004', 'street': '500 Trade Road, City 4', 'type': 'contact'})
+        ]"/>
+    </record>
+
+    <!-- Approved Supplier 3: res.bank -->
+    <record id="bank_3" model="res.bank">
+        <field name="name">PQR Bank</field>
+        <field name="street">403 Commerce St, City 3</field>
+        <field name="bank_swift_code">SWIFT303</field>
+        <field name="iban">US4000000000000003</field>
+    </record>
+
+    <!-- Approved Supplier 3: res.partner.bank -->
+    <record id="bank_account_3" model="res.partner.bank">
+        <field name="acc_holder_name">PeakPulse Solutions</field>
+        <field name="acc_number">3000000003</field>
+        <field name="bank_id" ref="bank_3"/>
+        <field name="partner_id" ref="supplier_3"/>
+        <field name="address">303 Industry Lane, City 3</field>
+    </record>
+
+    <!-- Approved Supplier 3: res.users -->
+    <record id="user_3" model="res.users">
+        <field name="login">peakpulse@business.com</field>
+        <field name="password">peakpulse@business.com</field>
+        <field name="partner_id" ref="supplier_3"/>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+    </record>
+
+    <!-- Supplier Registration 4: Rejected -->
+    <record id="supplier_registration_4" model="supplier.registration">
+        <field name="company_name">SilverTech Co.</field>
+        <field name="email">silvertech@business.com</field>
+        <field name="phone">555-0004</field>
+        <field name="company_address">404 Trade Center, City 4</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm4.png"/>
+        <field name="company_type_category">sole_proprietorship</field>
+        <field name="contact_person_name">Primary Contact 4</field>
+        <field name="contact_email">primary4@silvertech.com</field>
+        <field name="contact_phone">555-9004</field>
+        <field name="contact_address">404 Trade Center, City 4</field>
+        <field name="finance_contact_name">Finance Contact 4</field>
+        <field name="finance_contact_email">finance4@silvertech.com</field>
+        <field name="finance_contact_phone">555-4004</field>
+        <field name="finance_contact_address">404 Finance Unit, City 4</field>
+        <field name="authorized_person_name">Authorized Person 4</field>
+        <field name="authorized_person_email">authorized4@silvertech.com</field>
+        <field name="authorized_person_phone">555-5004</field>
+        <field name="authorized_person_address">Office 400, City 4</field>
+        <field name="trade_license_number">TRD110004</field>
+        <field name="tax_identification_number">4000000000000004</field>
+        <field name="commencement_date">2020-08-10</field>
+        <field name="expiry_date">2024-08-10</field>
+        <field name="bank_name">LMN Bank</field>
+        <field name="bank_address">504 Banking Ave, City 4</field>
+        <field name="bank_swift_code">SWIFT304</field>
+        <field name="account_name">SilverTech Co.</field>
+        <field name="account_number">4000000004</field>
+        <field name="iban">US5000000000000004</field>
+        <field name="company_address_as_per_bank">404 Trade Center, City 4</field>
+        <field name="certification">ISO 45001</field>
+        <field name="certificate_number">CERT-2025-104</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2020-08-05</field>
+        <field name="certificate_expiry_date">2023-11-05</field>
+        <field name="name_of_signatory">Signatory 4</field>
+        <field name="authorized_signatory">Owner</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm3.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_4'), ref('client_5')])]"/>
+        <field name="state">rejected</field>
+        <field name="feedback">Application rejected due to expired ISO 45001 certification (expired on 2023-11-05) and
+            incomplete banking documentation.
+        </field>
+    </record>
+
+    <!-- Supplier Registration 5: Blacklist -->
+    <record id="supplier_registration_5" model="supplier.registration">
+        <field name="company_name">GreenWave Partners</field>
+        <field name="email">greenwave@business.com</field>
+        <field name="phone">555-0005</field>
+        <field name="company_address">505 Eco Plaza, City 5</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm5.png"/>
+        <field name="company_type_category">cooperative</field>
+        <field name="contact_person_name">Primary Contact 5</field>
+        <field name="contact_email">primary5@greenwave.com</field>
+        <field name="contact_phone">555-9005</field>
+        <field name="contact_address">505 Eco Plaza, City 5</field>
+        <field name="finance_contact_name">Finance Contact 5</field>
+        <field name="finance_contact_email">finance5@greenwave.com</field>
+        <field name="finance_contact_phone">555-4005</field>
+        <field name="finance_contact_address">505 Finance Dept, City 5</field>
+        <field name="authorized_person_name">Authorized Person 5</field>
+        <field name="authorized_person_email">authorized5@greenwave.com</field>
+        <field name="authorized_person_phone">555-5005</field>
+        <field name="authorized_person_address">Coop Office 500, City 5</field>
+        <field name="trade_license_number">TRD110005</field>
+        <field name="tax_identification_number">5000000000000005</field>
+        <field name="commencement_date">2021-11-15</field>
+        <field name="expiry_date">2025-11-15</field>
+        <field name="bank_name">DEF Bank</field>
+        <field name="bank_address">605 Capital Rd, City 5</field>
+        <field name="bank_swift_code">SWIFT305</field>
+        <field name="account_name">GreenWave Partners</field>
+        <field name="account_number">5000000005</field>
+        <field name="iban">US6000000000000005</field>
+        <field name="company_address_as_per_bank">505 Eco Plaza, City 5</field>
+        <field name="certification">ISO 9001</field>
+        <field name="certificate_number">CERT-2025-105</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2021-11-10</field>
+        <field name="certificate_expiry_date">2025-02-10</field>
+        <field name="name_of_signatory">Signatory 5</field>
+        <field name="authorized_signatory">President</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm3.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_1'), ref('client_5')])]"/>
+        <field name="state">blacklist</field>
+    </record>
+
+    <!-- Blacklist Entry for Supplier Registration 5 -->
+    <record id="blacklist_1" model="mail.blacklist">
+        <field name="email">greenwave@business.com</field>
+        <field name="active">True</field>
+        <field name="reason">Blacklisted due to submission of falsified financial statements.</field>
+    </record>
+    <!-- Supplier Registration 6: Approved -->
+    <record id="supplier_registration_6" model="supplier.registration">
+        <field name="company_name">NovaTech Solutions</field>
+        <field name="email">novatech@business.com</field>
+        <field name="phone">555-0006</field>
+        <field name="company_address">606 Tech Park, City 6</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm6.png"/>
+        <field name="company_type_category">corporate</field>
+        <field name="contact_person_name">Primary Contact 6</field>
+        <field name="contact_email">primary6@novatech.com</field>
+        <field name="contact_phone">555-9006</field>
+        <field name="contact_address">606 Tech Park, City 6</field>
+        <field name="finance_contact_name">Finance Contact 6</field>
+        <field name="finance_contact_email">finance6@novatech.com</field>
+        <field name="finance_contact_phone">555-4006</field>
+        <field name="finance_contact_address">606 Finance Dept, City 6</field>
+        <field name="authorized_person_name">Authorized Person 6</field>
+        <field name="authorized_person_email">authorized6@novatech.com</field>
+        <field name="authorized_person_phone">555-5006</field>
+        <field name="authorized_person_address">Suite 600, City 6</field>
+        <field name="trade_license_number">TRD110006</field>
+        <field name="tax_identification_number">6000000000000006</field>
+        <field name="commencement_date">2023-05-10</field>
+        <field name="expiry_date">2027-05-10</field>
+        <field name="bank_name">GHI Bank</field>
+        <field name="bank_address">706 Bank Ave, City 6</field>
+        <field name="bank_swift_code">SWIFT306</field>
+        <field name="account_name">NovaTech Solutions</field>
+        <field name="account_number">6000000006</field>
+        <field name="iban">US7000000000000006</field>
+        <field name="company_address_as_per_bank">606 Tech Park, City 6</field>
+        <field name="certification">ISO 27001</field>
+        <field name="certificate_number">CERT-2025-106</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2023-05-05</field>
+        <field name="certificate_expiry_date">2027-08-05</field>
+        <field name="name_of_signatory">Signatory 6</field>
+        <field name="authorized_signatory">CEO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm3.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_1'), ref('client_3')])]"/>
+        <field name="state">approved</field>
+    </record>
+
+    <!-- Approved Supplier 6: res.partner -->
+    <record id="supplier_6" model="res.partner">
+        <field name="name">NovaTech Solutions</field>
+        <field name="email">novatech@business.com</field>
+        <field name="phone">555-0006</field>
+        <field name="street">606 Tech Park, City 6</field>
+        <field name="company_type_category">corporate</field>
+        <field name="trade_license_number">TRD110006</field>
+        <field name="vat">6000000000000006</field>
+        <field name="commencement_date">2023-05-10</field>
+        <field name="expiry_date">2027-05-10</field>
+        <field name="certification">ISO 27001</field>
+        <field name="certificate_number">CERT-2025-106</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2023-05-05</field>
+        <field name="certificate_expiry_date">2027-08-05</field>
+        <field name="supplier_rank">1</field>
+        <field name="company_type">company</field>
+        <field name="name_of_signatory">Signatory 6</field>
+        <field name="authorized_signatory">CEO</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm6.png"/>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm3.png"/>
+        <field name="child_ids" eval="[
+            (0, 0, {'name': 'Primary Contact 6', 'email': 'primary6@novatech.com', 'phone': '555-9006', 'street': '606 Tech Park, City 6', 'function': 'Primary Contact', 'type': 'contact'}),
+            (0, 0, {'name': 'Finance Contact 6', 'email': 'finance6@novatech.com', 'phone': '555-4006', 'street': '606 Finance Dept, City 6', 'function': 'Finance Contact', 'type': 'contact'}),
+            (0, 0, {'name': 'Authorized Person 6', 'email': 'authorized6@novatech.com', 'phone': '555-5006', 'street': 'Suite 600, City 6', 'function': 'Authorized Contact', 'type': 'contact'}),
+            (0, 0, {'name': 'Client Corporation A', 'email': 'client_a@business.com', 'phone': '555-1001', 'street': '200 Client Street, City 1', 'type': 'contact'}),
+            (0, 0, {'name': 'Bright Ventures C', 'email': 'client_c@business.com', 'phone': '555-1003', 'street': '400 Innovation Ave, City 3', 'type': 'contact'})
+        ]"/>
+    </record>
+
+    <!-- Approved Supplier 6: res.bank -->
+    <record id="bank_6" model="res.bank">
+        <field name="name">GHI Bank</field>
+        <field name="street">706 Bank Ave, City 6</field>
+        <field name="bank_swift_code">SWIFT306</field>
+        <field name="iban">US7000000000000006</field>
+    </record>
+
+    <!-- Approved Supplier 6: res.partner.bank -->
+    <record id="bank_account_6" model="res.partner.bank">
+        <field name="acc_holder_name">NovaTech Solutions</field>
+        <field name="acc_number">6000000006</field>
+        <field name="bank_id" ref="bank_6"/>
+        <field name="partner_id" ref="supplier_6"/>
+        <field name="address">606 Tech Park, City 6</field>
+    </record>
+
+    <!-- Approved Supplier 6: res.users -->
+    <record id="user_6" model="res.users">
+        <field name="login">novatech@business.com</field>
+        <field name="password">novatech@business.com</field>
+        <field name="partner_id" ref="supplier_6"/>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+    </record>
+
+    <!-- Supplier Registration 7: Approved -->
+    <record id="supplier_registration_7" model="supplier.registration">
+        <field name="company_name">BrightFuture Inc.</field>
+        <field name="email">brightfuture@business.com</field>
+        <field name="phone">555-0007</field>
+        <field name="company_address">707 Future Lane, City 7</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm7.png"/>
+        <field name="company_type_category">LLC</field>
+        <field name="contact_person_name">Primary Contact 7</field>
+        <field name="contact_email">primary7@brightfuture.com</field>
+        <field name="contact_phone">555-9007</field>
+        <field name="contact_address">707 Future Lane, City 7</field>
+        <field name="finance_contact_name">Finance Contact 7</field>
+        <field name="finance_contact_email">finance7@brightfuture.com</field>
+        <field name="finance_contact_phone">555-4007</field>
+        <field name="finance_contact_address">707 Finance Wing, City 7</field>
+        <field name="authorized_person_name">Authorized Person 7</field>
+        <field name="authorized_person_email">authorized7@brightfuture.com</field>
+        <field name="authorized_person_phone">555-5007</field>
+        <field name="authorized_person_address">Suite 700, City 7</field>
+        <field name="trade_license_number">TRD110007</field>
+        <field name="tax_identification_number">7000000000000007</field>
+        <field name="commencement_date">2022-09-15</field>
+        <field name="expiry_date">2026-09-15</field>
+        <field name="bank_name">JKL Bank</field>
+        <field name="bank_address">807 Bank Road, City 7</field>
+        <field name="bank_swift_code">SWIFT307</field>
+        <field name="account_name">BrightFuture Inc.</field>
+        <field name="account_number">7000000007</field>
+        <field name="iban">US8000000000000007</field>
+        <field name="company_address_as_per_bank">707 Future Lane, City 7</field>
+        <field name="certification">ISO 9001</field>
+        <field name="certificate_number">CERT-2025-107</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2022-09-10</field>
+        <field name="certificate_expiry_date">2026-12-10</field>
+        <field name="name_of_signatory">Signatory 7</field>
+        <field name="authorized_signatory">CFO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm3.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_2'), ref('client_4')])]"/>
+        <field name="state">approved</field>
+    </record>
+
+    <!-- Approved Supplier 7: res.partner -->
+    <record id="supplier_7" model="res.partner">
+        <field name="name">BrightFuture Inc.</field>
+        <field name="email">brightfuture@business.com</field>
+        <field name="phone">555-0007</field>
+        <field name="street">707 Future Lane, City 7</field>
+        <field name="company_type_category">LLC</field>
+        <field name="trade_license_number">TRD110007</field>
+        <field name="vat">7000000000000007</field>
+        <field name="commencement_date">2022-09-15</field>
+        <field name="expiry_date">2026-09-15</field>
+        <field name="certification">ISO 9001</field>
+        <field name="certificate_number">CERT-2025-107</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2022-09-10</field>
+        <field name="certificate_expiry_date">2026-12-10</field>
+        <field name="supplier_rank">1</field>
+        <field name="company_type">company</field>
+        <field name="name_of_signatory">Signatory 7</field>
+        <field name="authorized_signatory">CFO</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm7.png"/>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm3.png"/>
+        <field name="child_ids" eval="[
+            (0, 0, {'name': 'Primary Contact 7', 'email': 'primary7@brightfuture.com', 'phone': '555-9007', 'street': '707 Future Lane, City 7', 'function': 'Primary Contact', 'type': 'contact'}),
+            (0, 0, {'name': 'Finance Contact 7', 'email': 'finance7@brightfuture.com', 'phone': '555-4007', 'street': '707 Finance Wing, City 7', 'function': 'Finance Contact', 'type': 'contact'}),
+            (0, 0, {'name': 'Authorized Person 7', 'email': 'authorized7@brightfuture.com', 'phone': '555-5007', 'street': 'Suite 700, City 7', 'function': 'Authorized Contact', 'type': 'contact'}),
+            (0, 0, {'name': 'Client Solutions B', 'email': 'client_b@business.com', 'phone': '555-1002', 'street': '300 Corporate Blvd, City 2', 'type': 'contact'}),
+            (0, 0, {'name': 'Global Partners D', 'email': 'client_d@business.com', 'phone': '555-1004', 'street': '500 Trade Road, City 4', 'type': 'contact'})
+        ]"/>
+    </record>
+
+    <!-- Approved Supplier 7: res.bank -->
+    <record id="bank_7" model="res.bank">
+        <field name="name">JKL Bank</field>
+        <field name="street">807 Bank Road, City 7</field>
+        <field name="bank_swift_code">SWIFT307</field>
+        <field name="iban">US8000000000000007</field>
+    </record>
+
+    <!-- Approved Supplier 7: res.partner.bank -->
+    <record id="bank_account_7" model="res.partner.bank">
+        <field name="acc_holder_name">BrightFuture Inc.</field>
+        <field name="acc_number">7000000007</field>
+        <field name="bank_id" ref="bank_7"/>
+        <field name="partner_id" ref="supplier_7"/>
+        <field name="address">707 Future Lane, City 7</field>
+    </record>
+
+    <!-- Approved Supplier 7: res.users -->
+    <record id="user_7" model="res.users">
+        <field name="login">brightfuture@business.com</field>
+        <field name="password">brightfuture@business.com</field>
+        <field name="partner_id" ref="supplier_7"/>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+    </record>
+
+    <!-- Supplier Registration 8: Rejected -->
+    <record id="supplier_registration_8" model="supplier.registration">
+        <field name="company_name">OldTech Ltd.</field>
+        <field name="email">oldtech@business.com</field>
+        <field name="phone">555-0008</field>
+        <field name="company_address">808 Legacy St, City 8</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm8.png"/>
+        <field name="company_type_category">corporate</field>
+        <field name="contact_person_name">Primary Contact 8</field>
+        <field name="contact_email">primary8@oldtech.com</field>
+        <field name="contact_phone">555-9008</field>
+        <field name="contact_address">808 Legacy St, City 8</field>
+        <field name="finance_contact_name">Finance Contact 8</field>
+        <field name="finance_contact_email">finance8@oldtech.com</field>
+        <field name="finance_contact_phone">555-4008</field>
+        <field name="finance_contact_address">808 Finance Unit, City 8</field>
+        <field name="authorized_person_name">Authorized Person 8</field>
+        <field name="authorized_person_email">authorized8@oldtech.com</field>
+        <field name="authorized_person_phone">555-5008</field>
+        <field name="authorized_person_address">Office 800, City 8</field>
+        <field name="trade_license_number">TRD110008</field>
+        <field name="tax_identification_number">8000000000000008</field>
+        <field name="commencement_date">2019-07-20</field>
+        <field name="expiry_date">2023-07-20</field>
+        <field name="bank_name">MNO Bank</field>
+        <field name="bank_address">908 Banking Rd, City 8</field>
+        <field name="bank_swift_code">SWIFT308</field>
+        <field name="account_name">OldTech Ltd.</field>
+        <field name="account_number">8000000008</field>
+        <field name="iban">US9000000000000008</field>
+        <field name="company_address_as_per_bank">808 Legacy St, City 8</field>
+        <field name="certification">ISO 9001</field>
+        <field name="certificate_number">CERT-2025-108</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2019-07-15</field>
+        <field name="certificate_expiry_date">2022-10-15</field>
+        <field name="name_of_signatory">Signatory 8</field>
+        <field name="authorized_signatory">CEO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm2.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_3'), ref('client_5')])]"/>
+        <field name="state">rejected</field>
+        <field name="feedback">Application rejected due to expired trade license and ISO certification.</field>
+    </record>
+
+    <!-- Supplier Registration 9: Rejected -->
+    <record id="supplier_registration_9" model="supplier.registration">
+        <field name="company_name">SoloWorks</field>
+        <field name="email">soloworks@business.com</field>
+        <field name="phone">555-0009</field>
+        <field name="company_address">909 Solo Rd, City 9</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm9.png"/>
+        <field name="company_type_category">sole_proprietorship</field>
+        <field name="contact_person_name">Primary Contact 9</field>
+        <field name="contact_email">primary9@soloworks.com</field>
+        <field name="contact_phone">555-9009</field>
+        <field name="contact_address">909 Solo Rd, City 9</field>
+        <field name="finance_contact_name">Finance Contact 9</field>
+        <field name="finance_contact_email">finance9@soloworks.com</field>
+        <field name="finance_contact_phone">555-4009</field>
+        <field name="finance_contact_address">909 Finance Unit, City 9</field>
+        <field name="authorized_person_name">Authorized Person 9</field>
+        <field name="authorized_person_email">authorized9@soloworks.com</field>
+        <field name="authorized_person_phone">555-5009</field>
+        <field name="authorized_person_address">Office 900, City 9</field>
+        <field name="trade_license_number">TRD110009</field>
+        <field name="tax_identification_number">9000000000000009</field>
+        <field name="commencement_date">2021-01-10</field>
+        <field name="expiry_date">2025-01-10</field>
+        <field name="bank_name">PQR Bank</field>
+        <field name="bank_address">1009 Bank St, City 9</field>
+        <field name="bank_swift_code">SWIFT309</field>
+        <field name="account_name">SoloWorks</field>
+        <field name="account_number">9000000009</field>
+        <field name="iban">US1000000000000009</field>
+        <field name="company_address_as_per_bank">909 Solo Rd, City 9</field>
+        <field name="certification">ISO 14001</field>
+        <field name="certificate_number">CERT-2025-109</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2021-01-05</field>
+        <field name="certificate_expiry_date">2024-04-05</field>
+        <field name="name_of_signatory">Signatory 9</field>
+        <field name="authorized_signatory">Owner</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm1.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_1'), ref('client_4')])]"/>
+        <field name="state">rejected</field>
+        <field name="feedback">Application rejected due to incomplete financial documentation.</field>
+    </record>
+
+    <!-- Supplier Registration 10: Rejected -->
+    <record id="supplier_registration_10" model="supplier.registration">
+        <field name="company_name">TechFail Co.</field>
+        <field name="email">techfail@business.com</field>
+        <field name="phone">555-0010</field>
+        <field name="company_address">1010 Fail St, City 10</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm10.png"/>
+        <field name="company_type_category">partnership</field>
+        <field name="contact_person_name">Primary Contact 10</field>
+        <field name="contact_email">primary10@techfail.com</field>
+        <field name="contact_phone">555-9010</field>
+        <field name="contact_address">1010 Fail St, City 10</field>
+        <field name="finance_contact_name">Finance Contact 10</field>
+        <field name="finance_contact_email">finance10@techfail.com</field>
+        <field name="finance_contact_phone">555-4010</field>
+        <field name="finance_contact_address">1010 Finance Dept, City 10</field>
+        <field name="authorized_person_name">Authorized Person 10</field>
+        <field name="authorized_person_email">authorized10@techfail.com</field>
+        <field name="authorized_person_phone">555-5010</field>
+        <field name="authorized_person_address">Suite 1000, City 10</field>
+        <field name="trade_license_number">TRD110010</field>
+        <field name="tax_identification_number">1000000000000010</field>
+        <field name="commencement_date">2020-03-15</field>
+        <field name="expiry_date">2024-03-15</field>
+        <field name="bank_name">STU Bank</field>
+        <field name="bank_address">1110 Bank Ave, City 10</field>
+        <field name="bank_swift_code">SWIFT310</field>
+        <field name="account_name">TechFail Co.</field>
+        <field name="account_number">1000000010</field>
+        <field name="iban">US1100000000000010</field>
+        <field name="company_address_as_per_bank">1010 Fail St, City 10</field>
+        <field name="certification">ISO 45001</field>
+        <field name="certificate_number">CERT-2025-110</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2020-03-10</field>
+        <field name="certificate_expiry_date">2023-06-10</field>
+        <field name="name_of_signatory">Signatory 10</field>
+        <field name="authorized_signatory">COO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm1.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_2'), ref('client_5')])]"/>
+        <field name="state">rejected</field>
+        <field name="feedback">Application rejected due to expired certifications.</field>
+    </record>
+
+    <!-- Supplier Registration 11: Rejected -->
+    <record id="supplier_registration_11" model="supplier.registration">
+        <field name="company_name">LowQuality Inc.</field>
+        <field name="email">lowquality@business.com</field>
+        <field name="phone">555-0011</field>
+        <field name="company_address">1111 Quality Rd, City 11</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm11.png"/>
+        <field name="company_type_category">LLC</field>
+        <field name="contact_person_name">Primary Contact 11</field>
+        <field name="contact_email">primary11@lowquality.com</field>
+        <field name="contact_phone">555-9011</field>
+        <field name="contact_address">1111 Quality Rd, City 11</field>
+        <field name="finance_contact_name">Finance Contact 11</field>
+        <field name="finance_contact_email">finance11@lowquality.com</field>
+        <field name="finance_contact_phone">555-4011</field>
+        <field name="finance_contact_address">1111 Finance Wing, City 11</field>
+        <field name="authorized_person_name">Authorized Person 11</field>
+        <field name="authorized_person_email">authorized11@lowquality.com</field>
+        <field name="authorized_person_phone">555-5011</field>
+        <field name="authorized_person_address">Suite 1100, City 11</field>
+        <field name="trade_license_number">TRD110011</field>
+        <field name="tax_identification_number">1100000000000011</field>
+        <field name="commencement_date">2021-06-20</field>
+        <field name="expiry_date">2025-06-20</field>
+        <field name="bank_name">VWX Bank</field>
+        <field name="bank_address">1211 Bank St, City 11</field>
+        <field name="bank_swift_code">SWIFT311</field>
+        <field name="account_name">LowQuality Inc.</field>
+        <field name="account_number">1100000011</field>
+        <field name="iban">US1200000000000011</field>
+        <field name="company_address_as_per_bank">1111 Quality Rd, City 11</field>
+        <field name="certification">ISO 9001</field>
+        <field name="certificate_number">CERT-2025-111</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2021-06-15</field>
+        <field name="certificate_expiry_date">2024-09-15</field>
+        <field name="name_of_signatory">Signatory 11</field>
+        <field name="authorized_signatory">CFO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm2.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_1'), ref('client_3')])]"/>
+        <field name="state">rejected</field>
+        <field name="feedback">Application rejected due to poor quality references.</field>
+    </record>
+
+    <!-- Supplier Registration 12: Final Review -->
+    <record id="supplier_registration_12" model="supplier.registration">
+        <field name="company_name">NextGen Co.</field>
+        <field name="email">nextgen@business.com</field>
+        <field name="phone">555-0012</field>
+        <field name="company_address">1212 Next St, City 12</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm12.png"/>
+        <field name="company_type_category">corporate</field>
+        <field name="contact_person_name">Primary Contact 12</field>
+        <field name="contact_email">primary12@nextgen.com</field>
+        <field name="contact_phone">555-9012</field>
+        <field name="contact_address">1212 Next St, City 12</field>
+        <field name="finance_contact_name">Finance Contact 12</field>
+        <field name="finance_contact_email">finance12@nextgen.com</field>
+        <field name="finance_contact_phone">555-4012</field>
+        <field name="finance_contact_address">1212 Finance Dept, City 12</field>
+        <field name="authorized_person_name">Authorized Person 12</field>
+        <field name="authorized_person_email">authorized12@nextgen.com</field>
+        <field name="authorized_person_phone">555-5012</field>
+        <field name="authorized_person_address">Suite 1200, City 12</field>
+        <field name="trade_license_number">TRD110012</field>
+        <field name="tax_identification_number">1200000000000012</field>
+        <field name="commencement_date">2023-02-15</field>
+        <field name="expiry_date">2027-02-15</field>
+        <field name="bank_name">YZA Bank</field>
+        <field name="bank_address">1312 Bank Ave, City 12</field>
+        <field name="bank_swift_code">SWIFT312</field>
+        <field name="account_name">NextGen Co.</field>
+        <field name="account_number">1200000012</field>
+        <field name="iban">US1300000000000012</field>
+        <field name="company_address_as_per_bank">1212 Next St, City 12</field>
+        <field name="certification">ISO 27001</field>
+        <field name="certificate_number">CERT-2025-112</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2023-02-10</field>
+        <field name="certificate_expiry_date">2027-05-10</field>
+        <field name="name_of_signatory">Signatory 12</field>
+        <field name="authorized_signatory">CEO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm2.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_2'), ref('client_4')])]"/>
+        <field name="state">final review</field>
+    </record>
+
+    <!-- Supplier Registration 13: Final Review -->
+    <record id="supplier_registration_13" model="supplier.registration">
+        <field name="company_name">EcoFuture Ltd.</field>
+        <field name="email">ecofuture@business.com</field>
+        <field name="phone">555-0013</field>
+        <field name="company_address">1313 Eco Lane, City 13</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm13.png"/>
+        <field name="company_type_category">LLC</field>
+        <field name="contact_person_name">Primary Contact 13</field>
+        <field name="contact_email">primary13@ecofuture.com</field>
+        <field name="contact_phone">555-9013</field>
+        <field name="contact_address">1313 Eco Lane, City 13</field>
+        <field name="finance_contact_name">Finance Contact 13</field>
+        <field name="finance_contact_email">finance13@ecofuture.com</field>
+        <field name="finance_contact_phone">555-4013</field>
+        <field name="finance_contact_address">1313 Finance Wing, City 13</field>
+        <field name="authorized_person_name">Authorized Person 13</field>
+        <field name="authorized_person_email">authorized13@ecofuture.com</field>
+        <field name="authorized_person_phone">555-5013</field>
+        <field name="authorized_person_address">Suite 1300, City 13</field>
+        <field name="trade_license_number">TRD110013</field>
+        <field name="tax_identification_number">1300000000000013</field>
+        <field name="commencement_date">2022-11-20</field>
+        <field name="expiry_date">2026-11-20</field>
+        <field name="bank_name">BCD Bank</field>
+        <field name="bank_address">1413 Bank Rd, City 13</field>
+        <field name="bank_swift_code">SWIFT313</field>
+        <field name="account_name">EcoFuture Ltd.</field>
+        <field name="account_number">1300000013</field>
+        <field name="iban">US1400000000000013</field>
+        <field name="company_address_as_per_bank">1313 Eco Lane, City 13</field>
+        <field name="certification">ISO 14001</field>
+        <field name="certificate_number">CERT-2025-113</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2022-11-15</field>
+        <field name="certificate_expiry_date">2026-02-15</field>
+        <field name="name_of_signatory">Signatory 13</field>
+        <field name="authorized_signatory">CFO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm2.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_1'), ref('client_5')])]"/>
+        <field name="state">final review</field>
+    </record>
+
+    <!-- Supplier Registration 14: Final Review -->
+    <record id="supplier_registration_14" model="supplier.registration">
+        <field name="company_name">InnoPulse</field>
+        <field name="email">innopulse@business.com</field>
+        <field name="phone">555-0014</field>
+        <field name="company_address">1414 Pulse St, City 14</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm14.png"/>
+        <field name="company_type_category">partnership</field>
+        <field name="contact_person_name">Primary Contact 14</field>
+        <field name="contact_email">primary14@innopulse.com</field>
+        <field name="contact_phone">555-9014</field>
+        <field name="contact_address">1414 Pulse St, City 14</field>
+        <field name="finance_contact_name">Finance Contact 14</field>
+        <field name="finance_contact_email">finance14@innopulse.com</field>
+        <field name="finance_contact_phone">555-4014</field>
+        <field name="finance_contact_address">1414 Finance Block, City 14</field>
+        <field name="authorized_person_name">Authorized Person 14</field>
+        <field name="authorized_person_email">authorized14@innopulse.com</field>
+        <field name="authorized_person_phone">555-5014</field>
+        <field name="authorized_person_address">Suite 1400, City 14</field>
+        <field name="trade_license_number">TRD110014</field>
+        <field name="tax_identification_number">1400000000000014</field>
+        <field name="commencement_date">2023-03-25</field>
+        <field name="expiry_date">2027-03-25</field>
+        <field name="bank_name">EFG Bank</field>
+        <field name="bank_address">1514 Bank Ave, City 14</field>
+        <field name="bank_swift_code">SWIFT314</field>
+        <field name="account_name">InnoPulse</field>
+        <field name="account_number">1400000014</field>
+        <field name="iban">US1500000000000014</field>
+        <field name="company_address_as_per_bank">1414 Pulse St, City 14</field>
+        <field name="certification">ISO 9001</field>
+        <field name="certificate_number">CERT-2025-114</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2023-03-20</field>
+        <field name="certificate_expiry_date">2027-06-20</field>
+        <field name="name_of_signatory">Signatory 14</field>
+        <field name="authorized_signatory">COO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm3.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_3'), ref('client_4')])]"/>
+        <field name="state">final review</field>
+    </record>
+
+    <!-- Supplier Registration 15: Final Review -->
+    <record id="supplier_registration_15" model="supplier.registration">
+        <field name="company_name">GreenTech Co.</field>
+        <field name="email">greentech@business.com</field>
+        <field name="phone">555-0015</field>
+        <field name="company_address">1515 Green Rd, City 15</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm15.png"/>
+        <field name="company_type_category">corporate</field>
+        <field name="contact_person_name">Primary Contact 15</field>
+        <field name="contact_email">primary15@greentech.com</field>
+        <field name="contact_phone">555-9015</field>
+        <field name="contact_address">1515 Green Rd, City 15</field>
+        <field name="finance_contact_name">Finance Contact 15</field>
+        <field name="finance_contact_email">finance15@greentech.com</field>
+        <field name="finance_contact_phone">555-4015</field>
+        <field name="finance_contact_address">1515 Finance Dept, City 15</field>
+        <field name="authorized_person_name">Authorized Person 15</field>
+        <field name="authorized_person_email">authorized15@greentech.com</field>
+        <field name="authorized_person_phone">555-5015</field>
+        <field name="authorized_person_address">Suite 1500, City 15</field>
+        <field name="trade_license_number">TRD110015</field>
+        <field name="tax_identification_number">1500000000000015</field>
+        <field name="commencement_date">2022-07-10</field>
+        <field name="expiry_date">2026-07-10</field>
+        <field name="bank_name">HIJ Bank</field>
+        <field name="bank_address">1615 Bank St, City 15</field>
+        <field name="bank_swift_code">SWIFT315</field>
+        <field name="account_name">GreenTech Co.</field>
+        <field name="account_number">1500000015</field>
+        <field name="iban">US1600000000000015</field>
+        <field name="company_address_as_per_bank">1515 Green Rd, City 15</field>
+        <field name="certification">ISO 14001</field>
+        <field name="certificate_number">CERT-2025-115</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2022-07-05</field>
+        <field name="certificate_expiry_date">2026-10-05</field>
+        <field name="name_of_signatory">Signatory 15</field>
+        <field name="authorized_signatory">CEO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm2.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_2'), ref('client_5')])]"/>
+        <field name="state">final review</field>
+    </record>
+
+    <!-- Supplier Registration 16: Final Review -->
+    <record id="supplier_registration_16" model="supplier.registration">
+        <field name="company_name">SkyHigh Solutions</field>
+        <field name="email">skyhigh@business.com</field>
+        <field name="phone">555-0016</field>
+        <field name="company_address">1616 Sky St, City 16</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm16.png"/>
+        <field name="company_type_category">LLC</field>
+        <field name="contact_person_name">Primary Contact 16</field>
+        <field name="contact_email">primary16@skyhigh.com</field>
+        <field name="contact_phone">555-9016</field>
+        <field name="contact_address">1616 Sky St, City 16</field>
+        <field name="finance_contact_name">Finance Contact 16</field>
+        <field name="finance_contact_email">finance16@skyhigh.com</field>
+        <field name="finance_contact_phone">555-4016</field>
+        <field name="finance_contact_address">1616 Finance Wing, City 16</field>
+        <field name="authorized_person_name">Authorized Person 16</field>
+        <field name="authorized_person_email">authorized16@skyhigh.com</field>
+        <field name="authorized_person_phone">555-5016</field>
+        <field name="authorized_person_address">Suite 1600, City 16</field>
+        <field name="trade_license_number">TRD110016</field>
+        <field name="tax_identification_number">1600000000000016</field>
+        <field name="commencement_date">2023-04-15</field>
+        <field name="expiry_date">2027-04-15</field>
+        <field name="bank_name">KLM Bank</field>
+        <field name="bank_address">1716 Bank Rd, City 16</field>
+        <field name="bank_swift_code">SWIFT316</field>
+        <field name="account_name">SkyHigh Solutions</field>
+        <field name="account_number">1600000016</field>
+        <field name="iban">US1700000000000016</field>
+        <field name="company_address_as_per_bank">1616 Sky St, City 16</field>
+        <field name="certification">ISO 27001</field>
+        <field name="certificate_number">CERT-2025-116</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2023-04-10</field>
+        <field name="certificate_expiry_date">2027-07-10</field>
+        <field name="name_of_signatory">Signatory 16</field>
+        <field name="authorized_signatory">CFO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm1.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_1'), ref('client_3')])]"/>
+        <field name="state">final review</field>
+    </record>
+
+    <!-- Supplier Registration 17: Blacklist -->
+    <record id="supplier_registration_17" model="supplier.registration">
+        <field name="company_name">FraudTech Partners</field>
+        <field name="email">fraudtech@business.com</field>
+        <field name="phone">555-0017</field>
+        <field name="company_address">1717 Fraud St, City 17</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm17.png"/>
+        <field name="company_type_category">partnership</field>
+        <field name="contact_person_name">Primary Contact 17</field>
+        <field name="contact_email">primary17@fraudtech.com</field>
+        <field name="contact_phone">555-9017</field>
+        <field name="contact_address">1717 Fraud St, City 17</field>
+        <field name="finance_contact_name">Finance Contact 17</field>
+        <field name="finance_contact_email">finance17@fraudtech.com</field>
+        <field name="finance_contact_phone">555-4017</field>
+        <field name="finance_contact_address">1717 Finance Block, City 17</field>
+        <field name="authorized_person_name">Authorized Person 17</field>
+        <field name="authorized_person_email">authorized17@fraudtech.com</field>
+        <field name="authorized_person_phone">555-5017</field>
+        <field name="authorized_person_address">Suite 1700, City 17</field>
+        <field name="trade_license_number">TRD110017</field>
+        <field name="tax_identification_number">1700000000000017</field>
+        <field name="commencement_date">2021-08-20</field>
+        <field name="expiry_date">2025-08-20</field>
+        <field name="bank_name">NOP Bank</field>
+        <field name="bank_address">1817 Bank Ave, City 17</field>
+        <field name="bank_swift_code">SWIFT317</field>
+        <field name="account_name">FraudTech Partners</field>
+        <field name="account_number">1700000017</field>
+        <field name="iban">US1800000000000017</field>
+        <field name="company_address_as_per_bank">1717 Fraud St, City 17</field>
+        <field name="certification">ISO 9001</field>
+        <field name="certificate_number">CERT-2025-117</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2021-08-15</field>
+        <field name="certificate_expiry_date">2025-11-15</field>
+        <field name="name_of_signatory">Signatory 17</field>
+        <field name="authorized_signatory">COO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm1.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_4'), ref('client_5')])]"/>
+        <field name="state">blacklist</field>
+    </record>
+
+    <!-- Blacklist Entry for Supplier Registration 17 -->
+    <record id="blacklist_2" model="mail.blacklist">
+        <field name="email">fraudtech@business.com</field>
+        <field name="active">True</field>
+        <field name="reason">Blacklisted due to fraudulent banking details.</field>
+    </record>
+
+    <!-- Supplier Registration 18: Blacklist -->
+    <record id="supplier_registration_18" model="supplier.registration">
+        <field name="company_name">DarkPool Co.</field>
+        <field name="email">darkpool@business.com</field>
+        <field name="phone">555-0018</field>
+        <field name="company_address">1818 Dark St, City 18</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm18.png"/>
+        <field name="company_type_category">cooperative</field>
+        <field name="contact_person_name">Primary Contact 18</field>
+        <field name="contact_email">primary18@darkpool.com</field>
+        <field name="contact_phone">555-9018</field>
+        <field name="contact_address">1818 Dark St, City 18</field>
+        <field name="finance_contact_name">Finance Contact 18</field>
+        <field name="finance_contact_email">finance18@darkpool.com</field>
+        <field name="finance_contact_phone">555-4018</field>
+        <field name="finance_contact_address">1818 Finance Dept, City 18</field>
+        <field name="authorized_person_name">Authorized Person 18</field>
+        <field name="authorized_person_email">authorized18@darkpool.com</field>
+        <field name="authorized_person_phone">555-5018</field>
+        <field name="authorized_person_address">Suite 1800, City 18</field>
+        <field name="trade_license_number">TRD110018</field>
+        <field name="tax_identification_number">1800000000000018</field>
+        <field name="commencement_date">2020-09-25</field>
+        <field name="expiry_date">2024-09-25</field>
+        <field name="bank_name">QRS Bank</field>
+        <field name="bank_address">1918 Bank Rd, City 18</field>
+        <field name="bank_swift_code">SWIFT318</field>
+        <field name="account_name">DarkPool Co.</field>
+        <field name="account_number">1800000018</field>
+        <field name="iban">US1900000000000018</field>
+        <field name="company_address_as_per_bank">1818 Dark St, City 18</field>
+        <field name="certification">ISO 14001</field>
+        <field name="certificate_number">CERT-2025-118</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2020-09-20</field>
+        <field name="certificate_expiry_date">2024-12-20</field>
+        <field name="name_of_signatory">Signatory 18</field>
+        <field name="authorized_signatory">President</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm1.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_1'), ref('client_2')])]"/>
+        <field name="state">blacklist</field>
+    </record>
+
+    <!-- Blacklist Entry for Supplier Registration 18 -->
+    <record id="blacklist_3" model="mail.blacklist">
+        <field name="email">darkpool@business.com</field>
+        <field name="active">True</field>
+        <field name="reason">Blacklisted due to unethical business practices.</field>
+    </record>
+
+    <!-- Supplier Registration 19: submitted -->
+    <record id="supplier_registration_19" model="supplier.registration">
+        <field name="company_name">FreshStart Inc.</field>
+        <field name="email">freshstart@business.com</field>
+        <field name="phone">555-0019</field>
+        <field name="company_address">1919 Start St, City 19</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm19.png"/>
+        <field name="company_type_category">corporate</field>
+        <field name="contact_person_name">Primary Contact 19</field>
+        <field name="contact_email">primary19@freshstart.com</field>
+        <field name="contact_phone">555-9019</field>
+        <field name="contact_address">1919 Start St, City 19</field>
+        <field name="finance_contact_name">Finance Contact 19</field>
+        <field name="finance_contact_email">finance19@freshstart.com</field>
+        <field name="finance_contact_phone">555-4019</field>
+        <field name="finance_contact_address">1919 Finance Dept, City 19</field>
+        <field name="authorized_person_name">Authorized Person 19</field>
+        <field name="authorized_person_email">authorized19@freshstart.com</field>
+        <field name="authorized_person_phone">555-5019</field>
+        <field name="authorized_person_address">Suite 1900, City 19</field>
+        <field name="trade_license_number">TRD110019</field>
+        <field name="tax_identification_number">1900000000000019</field>
+        <field name="commencement_date">2023-06-10</field>
+        <field name="expiry_date">2027-06-10</field>
+        <field name="bank_name">TUV Bank</field>
+        <field name="bank_address">2019 Bank Ave, City 19</field>
+        <field name="bank_swift_code">SWIFT319</field>
+        <field name="account_name">FreshStart Inc.</field>
+        <field name="account_number">1900000019</field>
+        <field name="iban">US2000000000000019</field>
+        <field name="company_address_as_per_bank">1919 Start St, City 19</field>
+        <field name="certification">ISO 27001</field>
+        <field name="certificate_number">CERT-2025-119</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2023-06-05</field>
+        <field name="certificate_expiry_date">2027-09-05</field>
+        <field name="name_of_signatory">Signatory 19</field>
+        <field name="authorized_signatory">CEO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm1.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_3'), ref('client_5')])]"/>
+        <field name="state">submitted</field>
+    </record>
+
+    <!-- Supplier Registration 20: submitted -->
+    <record id="supplier_registration_20" model="supplier.registration">
+        <field name="company_name">BlueSky Ltd.</field>
+        <field name="email">bluesky@business.com</field>
+        <field name="phone">555-0020</field>
+        <field name="company_address">2020 Sky Rd, City 20</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm20.png"/>
+        <field name="company_type_category">LLC</field>
+        <field name="contact_person_name">Primary Contact 20</field>
+        <field name="contact_email">primary20@bluesky.com</field>
+        <field name="contact_phone">555-9020</field>
+        <field name="contact_address">2020 Sky Rd, City 20</field>
+        <field name="finance_contact_name">Finance Contact 20</field>
+        <field name="finance_contact_email">finance20@bluesky.com</field>
+        <field name="finance_contact_phone">555-4020</field>
+        <field name="finance_contact_address">2020 Finance Wing, City 20</field>
+        <field name="authorized_person_name">Authorized Person 20</field>
+        <field name="authorized_person_email">authorized20@bluesky.com</field>
+        <field name="authorized_person_phone">555-5020</field>
+        <field name="authorized_person_address">Suite 2000, City 20</field>
+        <field name="trade_license_number">TRD110020</field>
+        <field name="tax_identification_number">2000000000000020</field>
+        <field name="commencement_date">2023-07-15</field>
+        <field name="expiry_date">2027-07-15</field>
+        <field name="bank_name">WXY Bank</field>
+        <field name="bank_address">2120 Bank St, City 20</field>
+        <field name="bank_swift_code">SWIFT320</field>
+        <field name="account_name">BlueSky Ltd.</field>
+        <field name="account_number">2000000020</field>
+        <field name="iban">US2100000000000020</field>
+        <field name="company_address_as_per_bank">2020 Sky Rd, City 20</field>
+        <field name="certification">ISO 9001</field>
+        <field name="certificate_number">CERT-2025-120</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2023-07-10</field>
+        <field name="certificate_expiry_date">2027-10-10</field>
+        <field name="name_of_signatory">Signatory 20</field>
+        <field name="authorized_signatory">CFO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm1.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_1'), ref('client_4')])]"/>
+        <field name="state">submitted</field>
+    </record>
+
+    <!-- Supplier Registration 21: submitted -->
+    <record id="supplier_registration_21" model="supplier.registration">
+        <field name="company_name">PeakPerformance</field>
+        <field name="email">peakperformance@business.com</field>
+        <field name="phone">555-0021</field>
+        <field name="company_address">2121 Peak St, City 21</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm21.png"/>
+        <field name="company_type_category">partnership</field>
+        <field name="contact_person_name">Primary Contact 21</field>
+        <field name="contact_email">primary21@peakperformance.com</field>
+        <field name="contact_phone">555-9021</field>
+        <field name="contact_address">2121 Peak St, City 21</field>
+        <field name="finance_contact_name">Finance Contact 21</field>
+        <field name="finance_contact_email">finance21@peakperformance.com</field>
+        <field name="finance_contact_phone">555-4021</field>
+        <field name="finance_contact_address">2121 Finance Block, City 21</field>
+        <field name="authorized_person_name">Authorized Person 21</field>
+        <field name="authorized_person_email">authorized21@peakperformance.com</field>
+        <field name="authorized_person_phone">555-5021</field>
+        <field name="authorized_person_address">Suite 2100, City 21</field>
+        <field name="trade_license_number">TRD110021</field>
+        <field name="tax_identification_number">2100000000000021</field>
+        <field name="commencement_date">2023-08-20</field>
+        <field name="expiry_date">2027-08-20</field>
+        <field name="bank_name">ZAB Bank</field>
+        <field name="bank_address">2221 Bank Ave, City 21</field>
+        <field name="bank_swift_code">SWIFT321</field>
+        <field name="account_name">PeakPerformance</field>
+        <field name="account_number">2100000021</field>
+        <field name="iban">US2200000000000021</field>
+        <field name="company_address_as_per_bank">2121 Peak St, City 21</field>
+        <field name="certification">ISO 14001</field>
+        <field name="certificate_number">CERT-2025-121</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2023-08-15</field>
+        <field name="certificate_expiry_date">2027-11-15</field>
+        <field name="name_of_signatory">Signatory 21</field>
+        <field name="authorized_signatory">COO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm1.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_2'), ref('client_3')])]"/>
+        <field name="state">submitted</field>
+    </record>
+
+    <!-- Supplier Registration 22: submitted -->
+    <record id="supplier_registration_22" model="supplier.registration">
+        <field name="company_name">ClearPath Inc.</field>
+        <field name="email">clearpath@business.com</field>
+        <field name="phone">555-0022</field>
+        <field name="company_address">2222 Path Rd, City 22</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm22.png"/>
+        <field name="company_type_category">corporate</field>
+        <field name="contact_person_name">Primary Contact 22</field>
+        <field name="contact_email">primary22@clearpath.com</field>
+        <field name="contact_phone">555-9022</field>
+        <field name="contact_address">2222 Path Rd, City 22</field>
+        <field name="finance_contact_name">Finance Contact 22</field>
+        <field name="finance_contact_email">finance22@clearpath.com</field>
+        <field name="finance_contact_phone">555-4022</field>
+        <field name="finance_contact_address">2222 Finance Dept, City 22</field>
+        <field name="authorized_person_name">Authorized Person 22</field>
+        <field name="authorized_person_email">authorized22@clearpath.com</field>
+        <field name="authorized_person_phone">555-5022</field>
+        <field name="authorized_person_address">Suite 2200, City 22</field>
+        <field name="trade_license_number">TRD110022</field>
+        <field name="tax_identification_number">2200000000000022</field>
+        <field name="commencement_date">2023-09-25</field>
+        <field name="expiry_date">2027-09-25</field>
+        <field name="bank_name">CDE Bank</field>
+        <field name="bank_address">2322 Bank St, City 22</field>
+        <field name="bank_swift_code">SWIFT322</field>
+        <field name="account_name">ClearPath Inc.</field>
+        <field name="account_number">2200000022</field>
+        <field name="iban">US2300000000000022</field>
+        <field name="company_address_as_per_bank">2222 Path Rd, City 22</field>
+        <field name="certification">ISO 27001</field>
+        <field name="certificate_number">CERT-2025-122</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2023-09-20</field>
+        <field name="certificate_expiry_date">2027-12-20</field>
+        <field name="name_of_signatory">Signatory 22</field>
+        <field name="authorized_signatory">CEO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm1.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_4'), ref('client_5')])]"/>
+        <field name="state">submitted</field>
+    </record>
+
+    <!-- Supplier Registration 23: submitted -->
+    <record id="supplier_registration_23" model="supplier.registration">
+        <field name="company_name">TrueNorth Ltd.</field>
+        <field name="email">truenorth@business.com</field>
+        <field name="phone">555-0023</field>
+        <field name="company_address">2323 North St, City 23</field>
+        <field name="image_1920" type="base64" file="supplier_management/static/img/company/cm23.png"/>
+        <field name="company_type_category">LLC</field>
+        <field name="contact_person_name">Primary Contact 23</field>
+        <field name="contact_email">primary23@truenorth.com</field>
+        <field name="contact_phone">555-9023</field>
+        <field name="contact_address">2323 North St, City 23</field>
+        <field name="finance_contact_name">Finance Contact 23</field>
+        <field name="finance_contact_email">finance23@truenorth.com</field>
+        <field name="finance_contact_phone">555-4023</field>
+        <field name="finance_contact_address">2323 Finance Wing, City 23</field>
+        <field name="authorized_person_name">Authorized Person 23</field>
+        <field name="authorized_person_email">authorized23@truenorth.com</field>
+        <field name="authorized_person_phone">555-5023</field>
+        <field name="authorized_person_address">Suite 2300, City 23</field>
+        <field name="trade_license_number">TRD110023</field>
+        <field name="tax_identification_number">2300000000000023</field>
+        <field name="commencement_date">2023-10-10</field>
+        <field name="expiry_date">2027-10-10</field>
+        <field name="bank_name">FGH Bank</field>
+        <field name="bank_address">2423 Bank Rd, City 23</field>
+        <field name="bank_swift_code">SWIFT323</field>
+        <field name="account_name">TrueNorth Ltd.</field>
+        <field name="account_number">2300000023</field>
+        <field name="iban">US2400000000000023</field>
+        <field name="company_address_as_per_bank">2323 North St, City 23</field>
+        <field name="certification">ISO 9001</field>
+        <field name="certificate_number">CERT-2025-123</field>
+        <field name="certifying_body">ISO Authority</field>
+        <field name="award_date">2023-10-05</field>
+        <field name="certificate_expiry_date">2028-01-05</field>
+        <field name="name_of_signatory">Signatory 23</field>
+        <field name="authorized_signatory">CFO</field>
+        <field name="company_stamp" type="base64" file="supplier_management/static/img/stamp/stm1.png"/>
+        <field name="client_ids" eval="[(6, 0, [ref('client_1'), ref('client_2')])]"/>
+        <field name="state">submitted</field>
+    </record>
+</odoo>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_rfp_list" model="ir.ui.view">
+        <field name="name">supplier.management.rfp.list</field>
+        <field name="model">supplier.management.rfp</field>
+        <field name="arch" type="xml">
+            <tree string="RFP List">
+                <field name="rfp_name" string="RFP Number"/>
+                <field name="required_date"/>
+                <field name="status" widget="badge"
+                       decoration-success="status == 'approved' or status == 'recommendation' or status == 'accepted'"
+                       decoration-primary="status == 'draft'"
+                       decoration-info="status == 'submit'"
+                       decoration-warning="status == 'closed'"
+                       decoration-danger="status == 'rejected'"/>
+                <field name="approved_supplier"/>
+                <field name="total_amount" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_rfp_form" model="ir.ui.view">
+        <field name="name">supplier.management.rfp.form</field>
+        <field name="model">supplier.management.rfp</field>
+        <field name="arch" type="xml">
+            <form string="RFP Form">
+                <field name="selected_product_ids" invisible="1"/>
+                <header>
+                    <group groups="supplier_management.group_supplier_management_reviewer">
+                        <button name="action_submit" string="Submit" type="object"
+                                class="btn btn-success btn-lg"
+                                invisible="status != 'draft'"/>
+                        <button name="action_return_to_draft" string="To Draft" type="object"
+                                class="btn btn-secondary"
+                                invisible="status != 'submit'"/>
+                        <button name="action_recommend" string="Recommend" type="object"
+                                class="btn btn-info btn-lg"
+                                invisible="status != 'closed'"/>
+                    </group>
+                    <group groups="supplier_management.group_supplier_management_approver">
+                        <button name="action_approve" string="Approve" type="object"
+                                class="btn btn-success btn-lg"
+                                invisible="status != 'submit'"/>
+                        <button name="action_reject" string="Reject" type="object"
+                                class="btn btn-danger btn-lg"
+                                invisible="status != 'submit'"/>
+                        <button name="action_close" string="Close" type="object"
+                                class="btn btn-secondary btn-lg"
+                                invisible="status != 'approved'"/>
+                    </group>
+                    <field name="status" widget="statusbar"
+                           statusbar_visible="draft,submit,approved,rejected,closed,recommendation,accepted"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Accepted"
+                            invisible="status != 'accepted' "/>
+                    <widget name="web_ribbon" title="Rejected" bg_color="text-bg-danger"
+                            invisible="status != 'rejected'"/>
+                    <group>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="rfp_name" readonly="1"/>
+                            </h1>
+                        </div>
+                    </group>
+                    <group>
+                        <field name="create_uid" string="Requested By" readonly="1"/>
+                        <field name="required_date" readonly="status != 'draft'"/>
+                        <field name="approved_supplier" readonly="1"/>
+                        <field name="total_amount" readonly="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Product Lines">
+                            <field name="product_lines" readonly="status != 'draft'">
+                                <tree editable="bottom">
+                                    <field name="product_id" domain="[('id', 'not in', parent.selected_product_ids)]"/>
+                                    <field name="product_image" widget="image" class="float-start oe_avatar bg-view"/>
+                                    <field name="description"/>
+                                    <field name="quantity"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="RFQ Lines">
+                            <field name="rfq_lines" options="{'create':0,'delete':0}"
+                                   readonly="status in ('recommendation','accepted')">
+                                <tree id="tree_reviewer" default_order="score desc">
+                                    <field name="company_id" column_invisible="1"/>
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="partner_id" string="Supplier"/>
+                                    <field name="date_planned"/>
+                                    <field name="amount_total"/>
+                                    <field name="notes"/>
+                                    <field name="warranty_period"/>
+                                    <field name="score"/>
+                                    <field name="recommended"/>
+                                </tree>
+                                <form string="RFQ's">
+                                    <field name="rfp_status" invisible="1"/>
+                                    <header>
+                                        <group groups="supplier_management.group_supplier_management_approver">
+                                            <button name="action_accept" string="Accept" type="object"
+                                                    class="btn btn-primary btn-lg"
+                                                    invisible="rfp_status == 'accepted'"/>
+                                        </group>
+                                    </header>
+                                    <group>
+                                        <group>
+                                            <field name="company_id" invisible="True"/>
+                                            <field name="currency_id" invisible="True"/>
+                                            <field name="partner_id" options="{'no_open':True}" readonly="1"/>
+                                            <field name="date_planned" readonly="1"/>
+                                            <field name="warranty_period" readonly="1"/>
+                                        </group>
+                                        <group>
+                                            <field name="score"/>
+                                            <field name="recommended"/>
+                                        </group>
+                                        <notebook>
+                                            <page string="RFQ Lines">
+                                                <field name="order_line" options="{'create':0,'delete':0}" readonly="1">
+                                                    <tree>
+                                                        <field name="currency_id" column_invisible="1"/>
+                                                        <field name="product_id"/>
+                                                        <field name="product_qty"/>
+                                                        <field name="price_unit"/>
+                                                        <field name="delivery_charges"/>
+                                                        <field name="price_subtotal"/>
+                                                    </tree>
+                                                </field>
+                                                <group>
+                                                    <group>
+                                                        <field colspan="2" name="notes" nolabel="1"
+                                                               placeholder="Define your terms and conditions ..."/>
+                                                    </group>
+                                                    <group class="oe_subtotal_footer">
+                                                        <field name="tax_totals" widget="account-tax-totals-field"
+                                                               nolabel="1"
+                                                               colspan="2" readonly="1"/>
+                                                    </group>
+                                                </group>
+                                            </page>
+                                        </notebook>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Graph view -->
+    <record id="view_rfp_graph" model="ir.ui.view">
+        <field name="name">supplier.management.rfp.graph</field>
+        <field name="model">supplier.management.rfp</field>
+        <field name="arch" type="xml">
+            <graph string="RFP Analysis Graph" stacked="0" disable_linking="1">
+                <field name="required_date" type="row" interval="month" string="Required Date"/>
+                <field name="total_amount" type="measure" string="Total Amount"/>
+                <field name="rfp_name" type="color" string="RFP Number"/>
+                <field name="approved_supplier" type="color" string="Supplier"/>
+                <field name="status" type="color" string="Status"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Pivot view -->
+    <record id="view_rfp_pivot" model="ir.ui.view">
+        <field name="name">supplier.management.rfp.pivot</field>
+        <field name="model">supplier.management.rfp</field>
+        <field name="arch" type="xml">
+            <pivot string="RFP Analysis Pivot" default_order="total_amount desc" display_quantity="1" disable_linking="1">
+                <field name="approved_supplier" type="row" string="Supplier"/>
+                <field name="status" type="row" string="Status"/>
+                <field name="required_date" type="col" interval="month" string="Required Date"/>
+                <field name="total_amount" type="measure" string="Total Amount" widget="float_time"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Search view -->
+    <record id="view_rfp_search" model="ir.ui.view">
+        <field name="name">supplier.management.rfp.search</field>
+        <field name="model">supplier.management.rfp</field>
+        <field name="arch" type="xml">
+            <search string="RFP Search">
+                <!-- Search Fields -->
+                <field name="rfp_name" string="RFP Number"/>
+
+                <!-- Filters -->
+                <filter string="Draft" name="filter_draft" domain="[('status', '=', 'draft')]"/>
+                <filter string="Submitted" name="filter_submit" domain="[('status', '=', 'submit')]"/>
+                <filter string="Approved" name="filter_approved" domain="[('status', '=', 'approved')]"/>
+                <filter string="Required Date" name="required_date" date="required_date"/>
+
+                <!-- Group By Options -->
+                <group expand="1" string="Group By">
+                    <filter string="Status" name="group_by_status" context="{'group_by': 'status'}"/>
+                    <filter string="Approved Supplier" name="group_by_supplier" context="{'group_by': 'approved_supplier'}"/>
+                    <filter string="Required Date" name="group_by_required_date" context="{'group_by': 'required_date'}"/>
+                </group>
+
+                <!-- Search Panel -->
+                <searchpanel>
+                    <field name="status" string="Status" icon="fa-flag"/>
+                    <field name="approved_supplier" string="Approved Supplier" icon="fa-user-md"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action to open the list view -->
+    <record id="action_rfp_list" model="ir.actions.act_window">
+        <field name="name">RFPs</field>
+        <field name="res_model">supplier.management.rfp</field>
+        <field name="view_mode">tree,form,graph,pivot</field>
+        <field name="context">{'search_default_filter_submit':True}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create an RFP to manage your procurement processes.
+            </p>
+        </field>
+    </record>
+</odoo>

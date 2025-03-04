@@ -1,0 +1,50 @@
+id,rfp_id:id,product_id:id,description,quantity,unit_price,delivery_charges
+line_1,rfp_1,product.product_product_5,"Corner Desk Right Sit",5,147.0,100
+line_2,rfp_1,product.product_product_6,"Large Cabinet",4,320.0,80
+line_3,rfp_1,product.product_product_7,"Storage Box",3,15.8,70
+line_4,rfp_2,product.product_product_8,"Large Desk",5,,,
+line_5,rfp_2,product.product_product_9,"Pedal Bin",4,,,
+line_6,rfp_2,product.product_product_10,"Cabinet with Doors",3,,,
+line_7,rfp_3,product.product_product_12,"Office Chair Black",5,,,
+line_8,rfp_3,product.product_product_13,"Corner Desk Left Sit",4,,,
+line_9,rfp_3,product.product_product_20,"Drawer Black",3,,,
+line_10,rfp_4,product.product_product_20,"Flipover",5,,,
+line_11,rfp_4,product.product_product_22,"Desk Stand with Screen",4,,,
+line_12,rfp_5,product.product_product_24,"Individual Workplace",5,,,
+line_13,rfp_5,product.product_product_25,"Acoustic Bloc Screens",4,,,
+line_14,rfp_5,product.product_product_27,"Drawer",3,,,
+line_15,rfp_6,product.product_product_8,"Office Chair",5,,,
+line_16,rfp_6,product.product_product_9,"Office Lamp",4,,,
+line_17,rfp_7,product.consu_delivery_03,"Four Person Desk",6,2350.0,120
+line_18,rfp_7,product.consu_delivery_02,"Large Meeting Table",5,4000.0,100
+line_19,rfp_7,product.consu_delivery_01,"Three-Seat Sofa",3,1500.0,80
+line_20,rfp_8,product.product_product_12,"Desk Combination",5,,,
+line_21,rfp_8,product.product_product_13,"Customizable Desk (Steel, White)",4,,,
+line_22,rfp_9,product.product_product_5,"Customizable Desk (Steel, Black)",3,,,
+line_23,rfp_9,product.product_product_6,"Customizable Desk (Aluminium, White)",4,,,
+line_24,rfp_10,product.product_product_7,"Conference Chair (Steel)",5,,,
+line_25,rfp_10,product.product_product_10,"Conference Chair (Aluminium)",4,,,
+line_26,rfp_11,product.product_product_24,"Office Design Software",5,,,
+line_27,rfp_11,product.product_product_5,"Corner Desk Right Sit",4,,,
+line_28,rfp_12,product.product_product_6,"Large Cabinet",5,,,
+line_29,rfp_12,product.product_product_7,"Storage Box",3,,,
+line_30,rfp_13,product.product_product_8,"Large Desk",5,1799.0,150
+line_31,rfp_13,product.product_product_9,"Pedal Bin",4,47.0,120
+line_32,rfp_13,product.product_product_10,"Cabinet with Doors",3,140.0,100
+line_33,rfp_14,product.product_product_12,"Office Chair Black",6,120.50,130
+line_34,rfp_14,product.product_product_13,"Corner Desk Left Sit",5,85.0,110
+line_35,rfp_14,product.product_product_22,"Drawer Black",3,25.0,90
+line_36,rfp_15,product.product_product_20,"Flipover",5,1950.0,150
+line_37,rfp_15,product.product_product_22,"Desk Stand with Screen",4,2100.0,120
+line_38,rfp_15,product.product_product_24,"Individual Workplace",3,885.0,140
+line_39,rfp_16,product.product_product_25,"Conference Chair (Steel)",6,33.0,80
+line_40,rfp_16,product.product_product_27,"Conference Chair (Aluminium)",4,39.4,100
+line_41,rfp_16,product.product_product_5,"Customizable Desk (Steel, White)",3,750.0,120
+line_42,rfp_17,product.product_product_5,"Corner Desk Right Sit",5,,,
+line_43,rfp_17,product.product_product_6,"Large Cabinet",4,,,
+line_44,rfp_18,product.product_product_8,"Large Desk",5,1799.0,150
+line_45,rfp_18,product.product_product_9,"Pedal Bin",3,47.0,120
+line_46,rfp_19,product.product_product_12,"Office Chair Black",6,,,
+line_47,rfp_19,product.product_product_13,"Corner Desk Left Sit",4,,,
+line_48,rfp_20,product.product_product_20,"Flipover",5,1950.0,150
+line_49,rfp_20,product.product_product_22,"Desk Stand with Screen",4,2100.0,120

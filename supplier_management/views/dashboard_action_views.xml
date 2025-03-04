@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Define the Client-Side Action -->
+    <record id="action_supplier_dashboard" model="ir.actions.client">
+        <field name="name">Supplier Dashboard</field>
+        <field name="tag">supplier_management.supplier_dashboard</field>
+    </record>
+    <!-- Define the Menu Item -->
+    <menuitem
+        id="menu_supplier_dashboard"
+        name="Supplier Dashboard"
+        action="action_supplier_dashboard"
+        parent="supplier_management.menu_supplier_management"
+        groups="supplier_management.group_supplier_management_approver,supplier_management.group_supplier_management_reviewer"
+        sequence="1"
+    />
+</odoo>
